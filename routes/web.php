@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-use Illuminate\Http\Controllers;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes

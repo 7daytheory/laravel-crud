@@ -64,3 +64,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Tinker
+
+`php artisan tinker`
+Can use this to add content from cmder as a Model and save it as an entry into the DB specified<br />
+ex: `$newItem = New App\Models\NewItem` <br />
+`$newItem->content = "Content"`
+`$newItem->save();`
+Will be saved to the specified DB.
