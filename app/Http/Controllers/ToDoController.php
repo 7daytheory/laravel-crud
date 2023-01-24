@@ -13,7 +13,7 @@ class ToDoController extends Controller
      */
     public function index()
     {
-        //
+        return 123;
     }
 
     /**
