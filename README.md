@@ -70,6 +70,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 `php artisan tinker`
 Can use this to add content from cmder as a Model and save it as an entry into the DB specified<br />
 ex: `$newItem = New App\Models\NewItem` <br />
-`$newItem->content = "Content"`
-`$newItem->save();`
+`$newItem->content = "Content"` <br />
+`$newItem->save();` <br />
 Will be saved to the specified DB.
