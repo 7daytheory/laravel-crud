@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Todo;
 
 class ToDoController extends Controller
 {
@@ -13,7 +14,10 @@ class ToDoController extends Controller
      */
     public function index()
     {
-        return 123;
+        $todos = Todo::get();
+        dd($todos);
+
+       // return view('index')->('todos', $todos);
     }
 
     /**
