@@ -14,10 +14,8 @@ class ToDoController extends Controller
      */
     public function index()
     {
-        $todos = Todo::get();
-        dd($todos);
-
-       // return view('index')->('todos', $todos);
+       $todos = Todo::get();
+       return view('index')->with('todos', $todos);
     }
 
     /**
