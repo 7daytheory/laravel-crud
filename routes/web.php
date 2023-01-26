@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ToDoController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,6 @@ use App\Http\Controllers\ToDoController;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\ToDoController@index');
+Route::get('/', 'ToDoController@index');
 
-Route::resource('todo', 'ToDoController');
+Route::resource('todo', 'App\Http\Controllers\ToDoController');

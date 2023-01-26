@@ -1,8 +1,14 @@
 import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
     plugins: [
-            mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/sass/app.scss', 'public/css')
+        laravel({
+            input: [
+                'resources/sass/app.scss',
+                'resources/js/app.js',
+            ],
+            refresh: true,
+        }),
     ],
 });
