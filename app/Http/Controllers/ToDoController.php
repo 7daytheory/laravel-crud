@@ -50,7 +50,7 @@ class ToDoController extends Controller
     {
         $todo = Todo::find($id); //Returns all data from database with ID
 
-        dd($todo);
+        return view('show')->with('todo', $todo);
     }
 
     /**

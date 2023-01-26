@@ -13,6 +13,6 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', 'ToDoController@index');
+Route::get('/', 'App\Http\Controllers\ToDoController@index');
 
 Route::resource('todo', 'App\Http\Controllers\ToDoController');
