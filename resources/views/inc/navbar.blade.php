@@ -10,7 +10,7 @@
             <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ Request::is('todo/create') ? 'active' : '' }}" href="todo/create">Add Entry</a>
+            <a class="nav-link {{ Request::is('todo/create') ? 'active' : '' }}" href="/todo/create">Add Entry</a>
           </li>
         </ul>
       </div>

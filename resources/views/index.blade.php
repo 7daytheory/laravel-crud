@@ -2,7 +2,7 @@
 
 @section('content')
 <h1>To do list</h1>
-
+    @include('inc.messages')
     @if (count($todos) > 0)
         @foreach ($todos as $todo)
         <div class="card m-2">
