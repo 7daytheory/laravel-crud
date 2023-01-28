@@ -92,7 +92,23 @@ class ToDoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //todo/{id}
+        $this->validate($request,
+        [
+           //validation rules
+            'title' => 'required',
+            'due' => 'required',
+            'content' => 'required'
+        ]);
+
+        $todo = Todo::find($id);
+        $todo->title = $request->input('title');
+        $todo->content = $request->input('content');
+        $todo->due = $request->input('due');
+
+        $todo->save();
+
+        return redirect('/')->with('success', 'Updated data successfully!');
     }
 
     /**
