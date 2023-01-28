@@ -47,7 +47,14 @@ class ToDoController extends Controller
             'content' => 'required'
         ]);
 
-        return 123;
+        $todo = new Todo();
+        $todo->title = $request->input('title');
+        $todo->content = $request->input('content');
+        $todo->due = $request->input('due');
+
+        $todo->save();
+
+        return redirect('/')->with('success', 'Added data successfully!');
     }
 
     /**
