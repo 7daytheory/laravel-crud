@@ -119,6 +119,11 @@ class ToDoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // /todo/{id}
+
+        $todo = Todo::find($id);
+        $todo->delete();
+
+        return redirect('/')->with('success', 'Entry successfully removed!');
     }
 }
