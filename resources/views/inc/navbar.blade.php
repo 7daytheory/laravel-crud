@@ -12,9 +12,6 @@
           <li class="nav-item">
             <a class="nav-link {{ Request::is('todo/create') ? 'active' : '' }}" href="/todo/create">Add Entry</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {{ Request::is('todo/edit') ? 'active' : '' }}" href="/todo/edit">Edit Entries</a>
-          </li>
         </ul>
       </div>
     </div>
