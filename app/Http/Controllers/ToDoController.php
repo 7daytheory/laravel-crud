@@ -39,6 +39,15 @@ class ToDoController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request,
+        [
+           //validation rules
+            'title' => 'required',
+            'due' => 'required',
+            'content' => 'required'
+        ]);
+
+        return 123;
     }
 
     /**

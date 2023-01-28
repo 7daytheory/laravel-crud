@@ -3,8 +3,8 @@
 @section('content')
 <h1>Create Entry</h1>
 
-<form method="post" action="#">
- <!-- @csrf  CSRF token shortcut -->
+<form method="post" action="/todo">
+    @csrf
   <div class="form-group">
     <label for="title">Title</label>
     <input type="text" class="form-control" id="title" name="title" placeholder="Enter title" required>
